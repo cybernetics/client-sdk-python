@@ -1,0 +1,18 @@
+* reject request if both status == ready_for_settlement
+--* support dd account
+  --* add get_base_url_and_compliance_key to jsonrpc client, support both account id and account address, parent vasp and dd
+-- * error case: invalid request json
+* error case: invalid payment object json
+* error case: reset write once field
+* error case: update op field
+* error case: missing required field
+
+-- * decode jws by header account address
+
+* offchain/client methods tests
+* validate inbound command tests
+* validate my actor address subaddress
+
+* for all invalid_request, summrize error cases for discussion
+* monkeypatch does not report method not call, we need show method not called if test failed for error_cases tests
+  * or, we change storage to raise error by flag?
